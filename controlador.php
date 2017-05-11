@@ -25,7 +25,12 @@ switch ($op){
     break;
 
     case "/":
-        $resp = $calc->dividir(); // llamamos al metodo dividir
+        if (($n1==0) or ($n2==0)){
+            $resp = "No se puede dividir por 0"; // Mensaje de error cuando se divide por 0
+            }
+        else{
+            $resp = $calc->dividir(); // llamamos al metodo dividir
+            }
     break;
 
     case "*":
