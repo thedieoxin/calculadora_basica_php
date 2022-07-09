@@ -4,30 +4,36 @@
  *
  */
  
-class Calculadora{
-    
-    public function calculadora($n1,$n2){
-        $this->n1=$n1;
-        $this->n2=$n2;
+class Calculadora {
+    public $an1=0;
+	public $an2=0;
+	
+    public function __construct($n1,$n2){
+        $this->an1 = $n1;
+        $this->an2 = $n2;
         }
     
     public function sumar(){
-        $res = $this->n1 + $this->n2;
+        $res = $this->an1 + $this->an2;
         return $res;
         }
     
     public function restar(){
-        $res = $this->n1 - $this->n2;
+        $res = $this->an1 - $this->an2;
         return $res;
         }
     
     public function multiplicar(){
-        $res = $this->n1 * $this->n2;
+        $res = $this->an1 * $this->an2;
         return $res;
         }
     
     public function dividir(){
-        $res = $this->n1 / $this->n2;
+        $res = $this->an1 / $this->an2;
+        return $res;
+        }
+	public function potencia(){
+        $res = pow($this->an1,$this->an2);
         return $res;
         }
     }

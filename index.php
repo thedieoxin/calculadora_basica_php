@@ -35,6 +35,7 @@
                     <option value="-">Restar</option>
                     <option value="/">Dividir</option>
                     <option value="*">Multiplicar</option>
+					<option value="p">Potencia</option>
                 </select>
             </div>
             <div class="box">

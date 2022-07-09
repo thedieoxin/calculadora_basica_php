@@ -12,7 +12,7 @@ $n1 = $_POST['n1']; // Rescatamos las variables, aqui la primera
 $n2 = $_POST['n2']; // Aqui la segunda
 $op = $_POST['op']; // Aqui el tipo de operacion a realizar (Suma, resta, multiplicacion, division)
 
-$calc = new calculadora($n1,$n2); // Realizamos el llamado a la clase para usar sus funciones.
+$calc = new Calculadora($n1,$n2); // Realizamos el llamado a la clase para usar sus funciones.
 
 // Este switch es para ver que hacemos segun la operacion.
 switch ($op){
@@ -36,7 +36,12 @@ switch ($op){
     case "*":
         $resp = $calc->multiplicar(); // llamamos al metodo multiplicar
     break;
+	
+	case "p":
+        $resp = $calc->potencia(); // llamamos al metodo potencia
+    break;
     }
+
 ?>
 <!-- Esta parte la hice en HTML solo para que se viera mas bonito y entendieran como funciona :D -->
 <!DOCTYPE HTML>
