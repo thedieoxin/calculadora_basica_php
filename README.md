@@ -1,8 +1,7 @@
-# calculadora_basica_php
+# Calculadora Básica PHP
 
-Wena...
+Buen dia.
 
-Este código el unico fin que tiene es explicar como hacer una calculadora en php usando clases de manera facil, 
-osea facil del verbo Kenita Larrain... 
+Este código explica como hacer una calculadora en php usando clases de manera facil. suerte y espero poder ayudar.
 
-asi que suerte, espero les sirva. :D 
+
